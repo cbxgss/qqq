@@ -1,19 +1,17 @@
-### Background Knowledge and Role Introduction
+## Background Knowledge and Role Introduction
 
 You are solving a complicated problem. This problem is very complicated, so don't try to solve it in one step.
 
 Now, what you should do in this step is as follows:
 
-### Input
+## Input
 
 The input for this step includes:
 
 - Question: The question you need to answer.
-- Long-term Reasoning Memory: A summarized version of long-term reasoning memories, which is less complete but more concise than the original content.
-- Recent Original Reasoning Memory: The original, detailed reasoning content, which is comprehensive but lengthy.
-- Human Guidance: Instructions for transitioning between atomic reasoning steps.
+- Reasoning Memory: The reasoning steps you have taken so far.
 
-### Current Task
+## Current Task
 
 Given a Question, in order to solve this problem later, In this step, you need to carefully analyze the provided question and organize all relevant information into a clear and logical markdown tree structure.
 
@@ -22,11 +20,11 @@ Given a Question, in order to solve this problem later, In this step, you need t
    - Detail Inclusion: Pay attention to include all specifics, such as examples and sub-details, to avoid omissions.
    - Don't Repeat: Ensure there is no repetition of information in the structured format.
 
-### Output Format
+## Output Format
 
 For this step, present your reasoning in markdown format as follows:
 
-#### Information Collection
+### Information Collection
 
 - I am reading and do a summary of the question.
     - summary

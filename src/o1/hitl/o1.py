@@ -18,7 +18,7 @@ class Hitl:
         self.infers: dict = {
             k: Agent(cfg, logger, v, system(v), user) for k, v in ID2NAME.items()
         }
-        self.infer = Agent(cfg, logger, name="infer", system="", user=user_guidance)
+        self.infer = Agent(cfg, logger, name="infer", system=system("infer"), user=user_guidance)
         self.answer = Agent(cfg, logger, "answer", answer_system, answer_user)
 
     async def aanswer(self, id, question: str):
@@ -44,7 +44,7 @@ class Hitl:
                 )
             CostManagers().show_cost()
             log.info(f"\n{rsp}")
-            save = input("y: 保存当前推理, else: 重新进行当前step推理")
+            save = input("y: 保存当前推理, else: 重新进行当前step推理: ")
             if save == "y":
                 trace[step] = {
                     "guidance": guidance,

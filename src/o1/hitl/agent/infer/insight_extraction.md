@@ -1,19 +1,17 @@
-### Background Knowledge and Role Introduction
+## Background Knowledge and Role Introduction
 
 You are solving a complicated problem. This problem is very complicated, so don't try to solve it in one step.
 
 Now, what you should do in this step is as follows:
 
-### Input
+## Input
 
 The input for this step includes:
 
 - Question: The question you need to answer.
-- Long-term Reasoning Memory: A summarized version of long-term reasoning memories, which is less complete but more concise than the original content.
-- Recent Original Reasoning Memory: The original, detailed reasoning content, which is comprehensive but lengthy.
-- Human Guidance: Instructions for transitioning between atomic reasoning steps.
+- Reasoning Memory: The reasoning steps you have taken so far.
 
-### Current Task
+## Current Task
 
 You need to first dig deeper into the existing information to uncover some deeper information, and then reason. The answer to this problem may be hidden in these deeper information.
 
@@ -26,27 +24,27 @@ You need to first dig deeper into the existing information to uncover some deepe
    - Do not analyze anything at this stage.
 4. Extract insights from the information you have observed.
 
-### Output Format
+## Output Format
 
 For this step, present your insights in markdown format as follows:
 
-#### Insight Extraction
+### Insight Extraction
 
-##### 1. Chosen Information
+#### 1. Chosen Information
 
 - Reason for Selection
 - Relevant Information 1
 - Relevant Information 2
 
-##### 2. Think
+#### 2. Think
 
 - Type of Information
 - Aspects of Information Humans Focus On
 
-##### 3. Observations:
+#### 3. Observations:
 
 Let's observe step by step, ...(maybe very detailed)
 
-##### 4. Insights: ...
+#### 4. Insights: ...
 
 Focus solely on extracting and analyzing insights from the information provided, without adding any additional commentary.
