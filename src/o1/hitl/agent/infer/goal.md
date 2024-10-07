@@ -16,8 +16,7 @@ The input for this step includes:
 ## Current Task
 
 1. Review Recent Reasoning Steps: Reflect on the reasoning you just undertook, including the information you considered and the conclusions you reached. What are you currently working on?
-2. Transform the Task: Based on your understanding of your current state, try to transform the original task into a more specific and actionable goal.
-   - Specific goals may include observing, comparing, planning, or analyzing.
+2. Set clear short-term goals for the next step.
 
 ## Output Format
 
