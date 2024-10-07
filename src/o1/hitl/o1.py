@@ -58,6 +58,7 @@ class Hitl:
                 }
         rsp = await self.answer.arun(id, question=question, inference=cot)
         cot += rsp
+        log.info(f"answer:\n{rsp}")
         self.logger.save_md(f"output/{id}.md", str(cot))
         cot.clear()
         return rsp, trace
