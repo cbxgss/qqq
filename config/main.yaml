@@ -1,0 +1,37 @@
+defaults:
+  - _self_
+  - method: hitl
+  - dataset: o1case
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+
+main: o1
+
+batch_size: 1
+
+llm: gpt-4o-mini  # gpt-4o-mini ollama
+
+timestamp: ${now:%m%d_%H%M%S}
+seed: 0
+description: none
+
+log_config:
+  log_file: true
+  log_dir: log
+  log_name: ${timestamp}-seed${seed}-${method.name}-${dataset}
+  base_log_dir: ${log_config.log_dir}/${main}/${log_config.log_name}
+
+hydra:
+  run:
+    dir: ${log_config.base_log_dir} # 设置日志输出的目录
+  job_logging:
+    handlers:
+      file:
+        filename: ${log_config.base_log_dir}/main.log
+    formatters:
+      simple:
+        format: '[%(levelname)s] - [%(asctime)s][%(name)s](%(pathname)s:%(lineno)d) %(message)s'
+        datefmt: '%Y-%m-%d %H:%M:%S'
+      colorlog:
+        format: '[%(log_color)s%(levelname)s%(reset)s] - [%(cyan)s%(asctime)s%(reset)s](%(pathname)s:%(lineno)d) %(message)s'
+        datefmt: '%Y-%m-%d %H:%M:%S'
