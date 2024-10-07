@@ -15,7 +15,7 @@
 
 模拟人类的原子推理，比如：澄清目标、提出猜想、自我检查、规划等多种类型的思考，通过一句 guidance, 指导模型进行下一步推理
 
-下面是在 0-cipher case 中，原子推理的一些举例：
+下面是在 0-cipher case 中，整个推理过程
 - 前提结构化(整理现有信息成半结构化形式 eg: 1encode example, 2decode example, 3 str to decode)
 - insight发现任务结构化（前提1，2，Q：发现1，2间的联系）
 - 任务约简（验证1个单词的关系）
