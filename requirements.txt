@@ -1,0 +1,10 @@
+python-dotenv
+aiohttp
+hydra-colorlog
+hydra-core
+omegaconf
+openai==1.50.2
+pandas
+prettytable
+tqdm
+requests
